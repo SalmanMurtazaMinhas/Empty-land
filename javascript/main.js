@@ -425,15 +425,15 @@ function animation() {
     player.vilocity.x = 0;
 
     if (movekeys.right.pressed) {
-      scrollTrack += 10;
+      scrollTrack += 30;
       score+= 1
       scoreElement.innerHTML = score
       console.log(score)
       platforms.forEach(function (platform) {
-        platform.position.x += -10;
+        platform.position.x += -30;
       })
       badguys.forEach(function (badguy) {
-        badguy.position.x += -10;
+        badguy.position.x += -30;
       })
       backgrounds.forEach(function (background) {
         background.position.x += -1;
@@ -455,12 +455,12 @@ function animation() {
         background6.position.x += -5;
       });
     } else if (movekeys.left.pressed && scrollTrack > 0) {
-      scrollTrack -= 10;
+      scrollTrack -= 30;
       platforms.forEach(function (platform) {
-        platform.position.x += 10;
+        platform.position.x += 30;
       });
       badguys.forEach(function (badguy) {
-        badguy.position.x += 10;
+        badguy.position.x += 30;
       })
       backgrounds.forEach(function (background) {
         background.position.x += 1;
@@ -573,10 +573,10 @@ window.addEventListener("keydown", function ({ keyCode }) {
     case 87:
       if(player.vilocity.y === 0){
 
-        player.vilocity.y = -13;
       }
       console.log(player.vilocity.y)
-  }
+      player.vilocity.y = -13;
+    }
 });
 
 window.addEventListener("keyup", function ({ keyCode }) {
