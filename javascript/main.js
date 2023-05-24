@@ -384,7 +384,7 @@ left: { pressed: false },
 
 // Annimation Loop
 function animation() {
-  // console.log("00000")
+  // console.log(scrollTrack)
   // console.log(player.position.x)
 //   con.drawImage(backgroundLayer1, 0, 0);
   requestAnimationFrame(animation);
@@ -425,15 +425,15 @@ function animation() {
     player.vilocity.x = 0;
 
     if (movekeys.right.pressed) {
-      scrollTrack += 30;
+      scrollTrack += 10;
       score+= 1
       scoreElement.innerHTML = score
       console.log(score)
       platforms.forEach(function (platform) {
-        platform.position.x += -30;
+        platform.position.x += -10;
       })
       badguys.forEach(function (badguy) {
-        badguy.position.x += -30;
+        badguy.position.x += -10;
       })
       backgrounds.forEach(function (background) {
         background.position.x += -1;
@@ -455,12 +455,12 @@ function animation() {
         background6.position.x += -5;
       });
     } else if (movekeys.left.pressed && scrollTrack > 0) {
-      scrollTrack -= 30;
+      scrollTrack -= 10;
       platforms.forEach(function (platform) {
-        platform.position.x += 30;
+        platform.position.x += 10;
       });
       badguys.forEach(function (badguy) {
-        badguy.position.x += 30;
+        badguy.position.x += 10;
       })
       backgrounds.forEach(function (background) {
         background.position.x += 1;
@@ -520,9 +520,9 @@ function animation() {
     // console.log(player.position.x)
   });
 
-  // if (scrollTrack > 8000) {
-  //   alert("You Won!");
-  // }
+  if (scrollTrack > 15810) {
+    alert("You Won!");
+  }
 
   if(player.position.y > canvas.height) {
     
@@ -573,9 +573,9 @@ window.addEventListener("keydown", function ({ keyCode }) {
     case 87:
       if(player.vilocity.y === 0){
 
+        player.vilocity.y = -13;
       }
       console.log(player.vilocity.y)
-      player.vilocity.y = -13;
     }
 });
 
