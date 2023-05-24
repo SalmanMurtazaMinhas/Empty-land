@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    /* display: flex; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+img {
+    width: 0;
+    height: 0;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 360px;
+    font-size: 50px;
+}
+
+
+
+span {
+    position: absolute;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#score {
+    top: 35px;
+    left: 36px;
+}
+#bestScore {
+    top: 65px;
+    left: 35px;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+
+#startBody {
+    background-image: url(/images/sunset.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* button{
+    font-size: 50px;
+    display: flex;
+    position: relative;
+    top: 600px;
+    left: 300px;
+} */
+
+.container {
+    /* background-color: aqua; */
+    /* border: 5px solid black; */
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: 450px;
+    padding: 20px;
+}
+
+.child {
+    background-image: url("/images/game-1.gif");
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 60px;
+}
+.popupContainer {
+    position: absolute;
+    left: 660px;
+    top: 50px;
+    background-color: bisque;
+    border-radius: 30px;
+    padding: 20px;
+}
