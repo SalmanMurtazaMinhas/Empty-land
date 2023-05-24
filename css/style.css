@@ -68,7 +68,7 @@ span {
 }
 
 .child {
-    background-image: url("/images/game-1.gif");
+    background-image: url("https://images.unsplash.com/photo-1684943210712-7aa4b85b4474?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80");
     background-position: center;
     background-size: cover;
     width: 450px;
@@ -84,4 +84,5 @@ span {
     background-color: bisque;
     border-radius: 30px;
     padding: 20px;
+    
 }
