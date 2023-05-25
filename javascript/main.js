@@ -143,7 +143,7 @@ class BadGuy {
 let player = new Player();
 let backgrounds = [
 new Background({ x: 0, y: 0, image: background1 }),
-new Background({ x: 1390, y: 0, image: background1 }),
+new Background({ x: 1520, y: 0, image: background1 }),
 new Background({ x: 2536, y: 0, image: background1 }),
 new Background({ x: 3536, y: 0, image: background1 }),
 new Background({ x: 4536, y: 0, image: background1 }),
