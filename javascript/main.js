@@ -528,6 +528,20 @@ function animation() {
     
     if(bestElement.innerHTML < score){
       bestElement.innerHTML = score
+      document.querySelector('.popupContainer').style.visibility = 'visible'
+      setTimeout(() => {
+        let get = document.querySelector('.popupContainer');
+        get.style.visibility = 'hidden';
+        }, 2000);
+
+  //       setTimeout(function () {
+  //         $popupContainer.style.opacity = 1;
+  //       }, 100);
+
+  //       $popupContainer.style.opacity = 0;
+  //  setTimeout(function () {
+  //    $popupContainer.style.visibility = 'hidden'
+  //  }, 900);
     }
     score = 0
     scoreElement.innerHTML = score
