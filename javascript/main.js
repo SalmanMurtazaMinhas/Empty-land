@@ -521,7 +521,7 @@ function animation() {
   });
 
   if (scrollTrack > 15810) {
-    alert("Well, come and get you Chocolate after clicking OK, I guess. ¯\_(ツ)_/¯ ");
+    // alert("Well, come and get you Chocolate after clicking OK, I guess. ¯\_(ツ)_/¯ ");
     window.location = 'https://youtu.be/xvFZjo5PgG0'
   }
 
