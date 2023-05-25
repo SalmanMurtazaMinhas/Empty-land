@@ -585,7 +585,7 @@ window.addEventListener("keydown", function ({ keyCode }) {
       player.currentSprite = player.sprites.run.runLeft
   }
   switch (keyCode) {
-    case 87:
+    case 38:
       if(player.vilocity.y === 0){
 
         player.vilocity.y = -13;
@@ -597,11 +597,11 @@ window.addEventListener("keydown", function ({ keyCode }) {
 window.addEventListener("keyup", function ({ keyCode }) {
   // console.log(keyCode)
   switch (keyCode) {
-    case 68:
+    case 39:
       movekeys.right.pressed = false;
       player.currentSprite = player.sprites.stand.standRight
       break
-    case 65:
+    case 37:
       movekeys.left.pressed = false;
       player.currentSprite = player.sprites.stand.standLeft
   }
