@@ -575,12 +575,12 @@ animation();
 window.addEventListener("keydown", function ({ keyCode }) {
   // console.log(keyCode)
   switch (keyCode) {
-    case 68:
+    case 39:
       movekeys.right.pressed = true;
       player.currentSprite = player.sprites.run.runRight
   }
   switch (keyCode) {
-    case 65:
+    case 37:
       movekeys.left.pressed = true;
       player.currentSprite = player.sprites.run.runLeft
   }
