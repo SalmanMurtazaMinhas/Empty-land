@@ -3,7 +3,7 @@ body {
     /* display: flex; */
     overflow-x: hidden;
     overflow-y: hidden;
-    
+    font-family: 'Dosis', sans-serif;
 }
 
 img {
@@ -44,7 +44,7 @@ span {
     background-position: center;
     width: 100vw;
     height: 100vh;
-
+    font-family: 'Dosis', sans-serif;
 }
 
 /* button{
@@ -85,4 +85,18 @@ span {
     border-radius: 30px;
     padding: 20px;
     visibility: hidden;
+}
+.songNameCon {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    bottom: 290px;
+    
+}
+
+h3 {
+   position: relative;
+   color: antiquewhite;  
 }
