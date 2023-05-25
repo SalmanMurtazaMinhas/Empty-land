@@ -99,7 +99,7 @@ span {
     color: green;
 }
 
-h3 {
+h3 ,h2 {
    position: relative;
    color: antiquewhite;  
 }
