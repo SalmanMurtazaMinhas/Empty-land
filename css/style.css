@@ -39,7 +39,7 @@ span {
 /* /////////////////////////////////////////////////////////////// */
 
 #startBody {
-    background-image: url(../images/sunset.gif);
+    background-image: url("../images/sunset.gif");
     background-size: cover;
     background-position: center;
     width: 100vw;
