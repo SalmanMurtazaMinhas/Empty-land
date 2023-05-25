@@ -95,6 +95,9 @@ span {
     bottom: 290px;
     
 }
+.popup {
+    color: green;
+}
 
 h3 {
    position: relative;
